@@ -23,26 +23,24 @@ Ensure you have the following dependencies installed:
    sudo apt update && sudo apt install g++ nmap python3
 Compile the C++ Files:
 
-      ```sh
-      g++ Echo.cpp -o Echo
-      g++ SilenceC.cpp -o Silence
+```sh
+g++ Echo.cpp -o Echo
+g++ SilenceC.cpp -o Silence
   
-   
-   
-   Run the Script:
-      ```sh
-         sudo python3 Silence.py
 
+```
+Run the Script:
 
+      sudo python3 Silence.py
 
-Usage
-Echo Mode:
+### Info
+Echo:
 Spoofs your subnet (e.g., xxx.xxx.xxx.XXX), making it appear as if your own network is under a DDoS attack.
 
 Silence Mode:
 Allows specifying a spoofed IP address, making the target system believe the attack originates from the chosen IP.
 
-Platform Compatibility
+### Platform Compatibility
 Tested and confirmed working on:
 
 Ubuntu
@@ -51,7 +49,7 @@ Kali Linux
 
 Supports both Ethernet and WiFi networks.
 
-⚠️ Disclaimer
+### ⚠️ Disclaimer
 This tool is intended strictly for:
 
 Educational purposes
@@ -62,8 +60,8 @@ Defensive testing
 
 Unauthorized use of this tool to attack, disrupt, or deceive systems is illegal and unethical. Always ensure you have explicit permission before testing on any network. Use responsibly and in compliance with applicable laws.
 
-Author
+### Author
 Charles Mortensen
 
-Read more about the author: The Cyber Express Article
+Read more about the author: https://thecyberexpress.com/utah-student-anti-phishing-vega/
 
