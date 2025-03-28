@@ -23,15 +23,18 @@ Ensure you have the following dependencies installed:
    sudo apt update && sudo apt install g++ nmap python3
 Compile the C++ Files:
 
-sh
-Copy
-g++ Echo.cpp -o Echo
-g++ SilenceC.cpp -o Silence
-Run the Script:
+      ```sh
+      g++ Echo.cpp -o Echo
+      g++ SilenceC.cpp -o Silence
+  
+   
+   
+   Run the Script:
+      ```sh
+         sudo python3 Silence.py
 
-sh
-Copy
-sudo python3 Silence.py
+
+
 Usage
 Echo Mode:
 Spoofs your subnet (e.g., xxx.xxx.xxx.XXX), making it appear as if your own network is under a DDoS attack.
