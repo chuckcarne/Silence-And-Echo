@@ -1,57 +1,66 @@
-Silence and Echo
+# Silence and Echo  
 
-Silence and Echo is a C++ program designed for testing and analyzing spoofed Denial-of-Service (DoS) attacks using malformed UDP packets. This tool allows users to simulate attack scenarios for cybersecurity research and defense testing purposes.
+**Silence and Echo** is a C++ tool designed for testing and analyzing spoofed Denial-of-Service (DoS) attacks using malformed UDP packets. This tool enables cybersecurity researchers and defenders to simulate attack scenarios for educational and defensive testing purposes.  
 
-Features
+## Features  
 
-Echo: Spoofs the last digits of your IP address, making it appear as if your network is under a DDoS attack.
+- **Echo**: Spoofs the last digits of your IP address, making it appear as if your network is under a DDoS attack.  
+- **Silence**: Allows setting a custom spoofed IP address, making the target believe the attack originates from a third party.  
 
-Silence: Allows you to set a spoofed IP address, making the target system believe the attack originates from a third party.
+## Installation  
 
-Installation
+### Prerequisites  
+Ensure you have the following dependencies installed:  
 
-Ensure you have the necessary dependencies installed before compiling and running the program.
+- **G++** (for compiling C++ code)  
+- **Nmap** (for network analysis)  
+- **Python 3** (for running the script)  
 
-1. Install Required Dependencies
+### Setup  
 
-sudo apt update && sudo apt install g++ nmap python3
+1. **Install Dependencies** (Debian/Ubuntu-based systems):  
+   ```sh
+   sudo apt update && sudo apt install g++ nmap python3
+Compile the C++ Files:
 
-2. Compile the C++ Files
-
-g++ Echo.cpp -o Echo 
+sh
+Copy
+g++ Echo.cpp -o Echo
 g++ SilenceC.cpp -o Silence
+Run the Script:
 
-3. Run the Script
-
-To start the simulation, execute the following command:
-
+sh
+Copy
 sudo python3 Silence.py
-
 Usage
+Echo Mode:
+Spoofs your subnet (e.g., xxx.xxx.xxx.XXX), making it appear as if your own network is under a DDoS attack.
 
-Echo will use your subnet (e.g., xxx.xxx.xxx.XXX) and spoof the last digits, making it seem like your system is being DDoSed.
-
-Silence allows you to define a specific spoofed IP address, making the victim's system believe the attack is coming from that IP.
+Silence Mode:
+Allows specifying a spoofed IP address, making the target system believe the attack originates from the chosen IP.
 
 Platform Compatibility
-
-This tool has been tested on:
+Tested and confirmed working on:
 
 Ubuntu
 
 Kali Linux
 
-It works on both Ethernet and WiFi networks.
+Supports both Ethernet and WiFi networks.
 
-Disclaimer
+⚠️ Disclaimer
+This tool is intended strictly for:
 
-This tool is strictly for educational and cyber security research purposes. Unauthorized use of this tool to attack, disrupt, or mislead others is illegal and unethical. Use it responsibly and in compliance with all applicable laws.
+Educational purposes
+
+Cybersecurity research
+
+Defensive testing
+
+Unauthorized use of this tool to attack, disrupt, or deceive systems is illegal and unethical. Always ensure you have explicit permission before testing on any network. Use responsibly and in compliance with applicable laws.
 
 Author
+Charles Mortensen
 
-Made by Charles Mortensen. For more about the author, check out the article: https://thecyberexpress.com/utah-student-anti-phishing-vega/
-
-License
-
-This project is released under the MIT License.
+Read more about the author: The Cyber Express Article
 
